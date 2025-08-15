@@ -6,7 +6,7 @@ https://deno-wallpapers.philhawksworth.deno.net/
 
 ## About the site
 
-Site built as a simple example of using Eleventy on with Deno and hosting on Deno Deploy.
+Site built as a simple example of using Eleventy with Deno and hosting on Deno Deploy.
 
 The site includes:
 
