@@ -16,7 +16,8 @@ for await (const file of Deno.readDir(imagesDir)) {
   const { size } = await Deno.stat(`${imagesDir}/${file.name}`);
   files.push({
       // make the name titlecase and replace - with space
-      "name": file.name,
+      "path": file.name,
+      "title": file.name.split(".")[0],
       "size": bytesToSize(size)
     });
   }
