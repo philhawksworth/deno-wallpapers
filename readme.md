@@ -12,7 +12,7 @@ The site includes:
 
 - Prebuild step to populate the site content data based on the wallpaper image assets found. This uses [Deno runtime APIs](https://docs.deno.com/api/deno/~/Deno) to inspect he files.
 - [Eleventy](https://www.11ty.dev/) to generate the site
-- [Eleventy Image PLugin](https://www.11ty.dev/docs/plugins/image/) to compress and optimise image thubmails for display
+- [Eleventy Image Plugin](https://www.11ty.dev/docs/plugins/image/) to compress and optimise image thubmails for display
 - [Vento templates](https://vento.js.org/) for some convenience
 
 ## Deploy your own
