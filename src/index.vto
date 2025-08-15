@@ -7,7 +7,8 @@ layout: layouts/base.vto
     <h2>
       {{ item.name }}
     </h2>
-    <img src="/wallpapers/{{ item.name }}" alt="{{ item.name }}" class="thumbnail" />
+    <img eleventy:formats="avif" eleventy:width="auto" src="/wallpapers/{{ item.name }}" alt="{{ item.name }}" class="thumbnail" />
+    
     <p>
       <a href="/wallpapers/{{ item.name }}" class="download" download>Download</a>
     </p>
