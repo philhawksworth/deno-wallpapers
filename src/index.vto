@@ -10,7 +10,7 @@ layout: layouts/base.vto
     <img eleventy:formats="avif" eleventy:width="auto" src="/wallpapers/{{ item.name }}" alt="{{ item.name }}" class="thumbnail" />
     
     <p>
-      <a href="/wallpapers/{{ item.name }}" class="download" download>Download</a>
+      <a href="/wallpapers/{{ item.name }}" class="download" download>Download</a> ({{ item.size }})
     </p>
   </section>
 {{ /for }}
