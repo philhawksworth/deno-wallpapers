@@ -5,7 +5,7 @@ layout: layouts/base.vto
 <div class="gallery">
 {{ for item of wallpapers }}
   <section class="wallpaper">
-    <h2>
+    <h2 name="{{ item.title }}">
       {{ item.title }}
     </h2>
     <img eleventy:formats="webp" eleventy:width="auto" src="/wallpapers/{{ item.path }}" alt="{{ item.title }}" class="thumbnail" />

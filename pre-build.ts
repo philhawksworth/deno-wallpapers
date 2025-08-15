@@ -22,6 +22,9 @@ for await (const file of Deno.readDir(imagesDir)) {
     });
   }
 
+  //order the files array by the title property
+  files.sort((a, b) => a.title.localeCompare(b.title));
+
 
 await Deno.writeTextFile("src/_data/wallpapers.json", JSON.stringify(files, null, 2));
 return "Data generated";
