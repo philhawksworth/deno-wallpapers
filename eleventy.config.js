@@ -1,20 +1,17 @@
 import { VentoPlugin } from 'eleventy-plugin-vento';
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
+import { preBuild } from './pre-build.ts';
 
 export default async function(eleventyConfig) {
 
   eleventyConfig.addPlugin(VentoPlugin);
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		// output image formats
-		formats: ["avif"],
-
-		// output image widths
-		widths: ["auto"],
-
-
-	});
-
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
   eleventyConfig.addPassthroughCopy("src/wallpapers");
+
+  eleventyConfig.on("eleventy.before", async () => {
+    const result = await preBuild();
+    console.log(result);
+  });
 };
 
 export const config = {

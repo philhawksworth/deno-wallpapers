@@ -1,3 +1,5 @@
+export async function preBuild() {
+
 // generate a data object from all the crocs images
 const imagesDir = `src/wallpapers`;
 const files = [];
@@ -9,3 +11,5 @@ for await (const file of Deno.readDir(imagesDir)) {
 }
 
 await Deno.writeTextFile("src/_data/wallpapers.json", JSON.stringify(files, null, 2));
+return "Data generated";
+}
