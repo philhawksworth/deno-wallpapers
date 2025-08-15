@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "dev": "deno --allow-all npm:@11ty/eleventy --serve"
+  },
+  "nodeModulesDir": "auto",
+  "imports": {
+    "@11ty/eleventy": "npm:@11ty/eleventy@^3.1.2",
+    "@std/assert": "jsr:@std/assert@1",
+    "eleventy-plugin-vento": "npm:eleventy-plugin-vento@^4.5.1"
+  }
+}

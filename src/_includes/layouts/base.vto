@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="preload" href="https://demo-styles.deno.deno.net/fonts/Moranga-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="https://demo-styles.deno.deno.net/fonts/Moranga-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="https://demo-styles.deno.deno.net/fonts/Recursive_Variable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="https://demo-styles.deno.deno.net/styles.css">
+    <style>
+      .thumbnail {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Wallpapers</h1>
+      <p>
+        A little collection of Deno wallpapers for the desktop.
+      </p>
+    </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>
+      Site built with <a href="https://github.com/denoland/wallpapers">Eleventy</a> and <a href="https://deno.com">Deno</a>, with templating by <a href="https://vento.js.org/">Vento</a>. Hosted by <a href="https://deno.com/deploy">Deno Deploy</a>.
+    </p>
+  </footer>
+  </body>
+</html>
