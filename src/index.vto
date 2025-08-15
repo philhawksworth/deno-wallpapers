@@ -2,15 +2,17 @@
 layout: layouts/base.vto
 ---
 
+<div class="gallery">
 {{ for item of wallpapers }}
   <section class="wallpaper">
     <h2>
       {{ item.name }}
     </h2>
-    <img eleventy:formats="avif" eleventy:width="auto" src="/wallpapers/{{ item.name }}" alt="{{ item.name }}" class="thumbnail" />
+    <img eleventy:formats="webp" eleventy:width="auto" src="/wallpapers/{{ item.name }}" alt="{{ item.name }}" class="thumbnail" />
     
     <p>
       <a href="/wallpapers/{{ item.name }}" class="download" download>Download</a> ({{ item.size }})
     </p>
   </section>
 {{ /for }}
+</div>
