@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "dev": "deno --allow-all npm:@11ty/eleventy --serve"
+    "dev": "deno --allow-all npm:@11ty/eleventy --serve",
+    "build": "deno --allow-all npm:@11ty/eleventy"
   },
   "nodeModulesDir": "auto",
   "imports": {
