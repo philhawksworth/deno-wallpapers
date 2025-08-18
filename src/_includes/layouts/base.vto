@@ -9,29 +9,36 @@
     <link rel="preload" href="https://demo-styles.deno.deno.net/fonts/Recursive_Variable.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="https://demo-styles.deno.deno.net/styles.css">
     <style>
-      body {
-        background-color: #020617;
-        color: #ccc;
-      } 
-      h1, h2, h3, a {
-        color: #fff;
+      @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #020617;
+            color: #ccc;
+          } 
+          h1, h2, h3, a {
+            color: #fff;
+          }
+          a {
+            text-decoration-color: #ccc;
+          }
+          .thumbnail {
+            border: 1px solid #fff;
+            box-shadow: 0 0 1.4em 0.8em rgba(255,255,255, 0.05);
+          }
       }
-      a {
-        text-decoration-color: #ccc;
-      }
+
       .thumbnail {
         border: 1px solid #000;
-        box-shadow: 0 0 1.4em 0.8em rgba(0,0,0, 0.05);
+        box-shadow: 0 0 1.4em 0.8em rgba(0,0,0, 0.2);
       }
     </style>
-    <meta name="twitter:image" content="https://deno-wallpapers.philhawksworth.deno.net/wallpapers-og.png">
+    <meta name="twitter:image" content="https://deno-wallpapers.philhawksworth.deno.net/wallpapers-og.webp">
     <meta name="twitter:image:alt" content="Dinosaur wallpapers for your desktop from Deno">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@deno_land">
 
     <meta property="og:title" content="Deno Wallpapers" />
     <meta property="og:description" content="Dinosaur wallpapers for your desktop from Deno" />
-    <meta property="og:image" content="https://deno-wallpapers.philhawksworth.deno.net/wallpapers-og.png" />
+    <meta property="og:image" content="https://deno-wallpapers.philhawksworth.deno.net/wallpapers-og.webp" />
     <meta property="og:url" content="https://deno-wallpapers.philhawksworth.deno.net" />
     <meta property="og:image:alt" content="Dinosaur wallpapers for your desktop from Deno">
     <meta property="og:type" content="website" />
