@@ -7,7 +7,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(VentoPlugin);
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
   eleventyConfig.addPassthroughCopy("src/wallpapers");
-  eleventyConfig.addPassthroughCopy("src/wallpapers-og.png");
+  eleventyConfig.addPassthroughCopy("src/wallpapers-og.webp");
 
   eleventyConfig.on("eleventy.before", async () => {
     const result = await preBuild();
